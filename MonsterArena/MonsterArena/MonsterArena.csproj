@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GiantSlug.cs" />
+    <Compile Include="Furries.cs" />
     <Compile Include="Goblin.cs" />
     <Compile Include="GoblinRoberto.cs" />
+    <Compile Include="Mage.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="MonsterData.cs" />
     <Compile Include="Orc.cs" />
