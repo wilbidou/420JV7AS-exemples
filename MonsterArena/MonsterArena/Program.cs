@@ -14,7 +14,7 @@ namespace MonsterArena
                 new Orc("Bob"),
                 new Goblin("Charlie"),
                 new Orc("David"),
-                new Furry("Trap")
+                new SpanishInquisition("Nobody expects")
             };
 
             foreach (var monster in monsters)
