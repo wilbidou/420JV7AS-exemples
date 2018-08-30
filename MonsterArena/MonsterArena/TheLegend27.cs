@@ -2,9 +2,9 @@
 
 namespace MonsterArena
 {
-    class Goblin : Monster
+    class TheLegend27 : Monster
     {
-        public Goblin(string name) : base(name)
+        public TheLegend27(string name) : base(name)
         {
             AddBonusLuck(25);
             AddBonusStrength(60);
