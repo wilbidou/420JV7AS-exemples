@@ -10,8 +10,8 @@ namespace MonsterArena
     {
         public AtlasWorldLifter(string name) : base(name)
         {
-            AddBonusLuck(75);
-            AddBonusVitality(25);
+            AddBonusLuck(1);
+            AddBonusVitality(99);
         }
 
     }
