@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GiantSlug.cs" />
+    <Compile Include="Furries.cs" />
     <Compile Include="Goblin.cs" />
     <Compile Include="Monster.cs" />
     <Compile Include="MonsterData.cs" />
