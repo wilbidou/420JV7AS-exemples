@@ -15,6 +15,9 @@ namespace MonsterArena
                 new Goblin("Charlie"),
                 new Orc("David"),
                 new Leprauchaun("Echo")
+                new HeroForFun("Saitama")
+                new GiantSlug("Babygirl")
+                new Furry("Trap")
             };
 
             foreach (var monster in monsters)
