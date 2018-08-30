@@ -14,6 +14,7 @@ namespace MonsterArena
                 new Orc("Bob"),
                 new Goblin("Charlie"),
                 new Orc("David"),
+                new Leprauchaun("Echo")
                 new HeroForFun("Saitama")
                 new GiantSlug("Babygirl")
                 new Furry("Trap")
