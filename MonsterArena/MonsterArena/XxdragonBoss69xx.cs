@@ -1,11 +1,13 @@
 ﻿namespace MonsterArena
 {
-    class Orc : Monster
+    class XxdragonBoss69xx : Monster
     {
-        public Orc(string name) : base(name)
+        public XxdragonBoss69xx(string name) : base(name)
         {
-            AddBonusStrength(50);
-            AddBonusVitality(50);
+            AddBonusStrength(75);
+            AddBonusVitality(25);
+            AddBonusDexterity(0);
+            AddBonusLuck(0);
         }
     }
 }
