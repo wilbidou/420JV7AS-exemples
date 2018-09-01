@@ -10,10 +10,9 @@ namespace MonsterArena
         {
             List<Monster> monsters = new List<Monster>()
             {
-                new SpanishInquisition("Nobody expects")
+                new SpanishInquisition("Nobody expects"),
                 new AtlasWorldLifter("Victor"),
                 new Daniel("David"),
-                new Furry("Trap"),
                 new GiantSlug("Babygirl"),
                 new HeroForFun("Saitama"),
                 new Leprauchaun("Echo"),
