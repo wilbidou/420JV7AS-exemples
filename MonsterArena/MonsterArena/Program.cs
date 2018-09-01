@@ -10,14 +10,18 @@ namespace MonsterArena
         {
             List<Monster> monsters = new List<Monster>()
             {
-                new Goblin("Alice"),
-                new Orc("Bob"),
-                new Goblin("Charlie"),
-                new Orc("David"),
-                new Leprauchaun("Echo")
-                new HeroForFun("Saitama")
-                new GiantSlug("Babygirl")
-                new Furry("Trap")
+                new AtlasWorldLifter("Victor"),
+                new Daniel("David"),
+                new Furry("Trap"),
+                new GiantSlug("Babygirl"),
+                new HeroForFun("Saitama"),
+                new Leprauchaun("Echo"),
+                new Nana.Spirit("Brad"),
+                new Palico("Mittens"),
+                new PereFwetar("Samuel"),
+                new TheLegend27("Colin"),
+                new XxdragonBoss69xx("Adrien"),
+                new GoblinRoberto("Roberto")
             };
 
             foreach (var monster in monsters)
