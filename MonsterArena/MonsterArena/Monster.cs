@@ -125,7 +125,7 @@ namespace MonsterArena
         
         protected int GetDamage()
         {
-            baseStrength + bonusStrength;
+            return baseStrength + bonusStrength;
         }
 
         int GetRemainingBonus()
