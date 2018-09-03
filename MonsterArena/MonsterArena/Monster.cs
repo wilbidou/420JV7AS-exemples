@@ -55,7 +55,7 @@ namespace MonsterArena
                 return;
             }
             int damage = GetDamage();
-            bool isCrit = random.Next(0, 100) < baseLuck + bonusLuck;
+            bool isCrit = random.Next(0, 100) < (baseLuck + bonusLuck);
             if (isCrit)
             {
                 damage *= 2;
@@ -75,8 +75,9 @@ namespace MonsterArena
                 bonusStrength += target.bonusStrength;
                 bonusVitality += target.bonusVitality;
                 bonusLuck += target.bonusLuck;
+                level += target.level;
                 Heal();
-                Console.WriteLine($"{target} dies! {this} is now level {++level}!");
+                Console.WriteLine($"{target} dies! {this} is now level {level}!");
             }
         }
 

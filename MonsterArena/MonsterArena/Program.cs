@@ -39,10 +39,15 @@ namespace MonsterArena
 
                     var monsterData = CreateMonsterData(monsters);
                     int attackIndex = activeMonster.GetAttackIndex(monsterData);
-                    if (attackIndex < 0 || attackIndex >= monsters.Count)
-                        continue;
 
-                    activeMonster.Attack(monsters[attackIndex]);
+                    if (attackIndex < 0 || attackIndex >= monsters.Count)
+                    {
+                        activeMonster.Attack(activeMonster);
+                    }
+                    else
+                    {
+                        activeMonster.Attack(monsters[attackIndex]);
+                    }
                 }
             }
 
