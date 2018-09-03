@@ -54,7 +54,7 @@ namespace MonsterArena
                 Console.WriteLine($"{this} attacks {target}, but it's already dead.");
                 return;
             }
-            int damage = baseStrength + bonusStrength;
+            int damage = GetDamage();
             bool isCrit = random.Next(0, 100) < baseLuck + bonusLuck;
             if (isCrit)
             {
@@ -121,6 +121,11 @@ namespace MonsterArena
             if (value < 0)
                 return;
             bonusLuck = Math.Min(value, GetRemainingBonus());
+        }
+        
+        protected int GetDamage()
+        {
+            baseStrength + bonusStrength;
         }
 
         int GetRemainingBonus()
