@@ -20,6 +20,7 @@ namespace MonsterArena
                 new Palico("Mittens"),
                 new PereFwetar("Samuel"),
                 new TheLegend27("Colin"),
+                new InhumanRat("Theo"),
                 new XxdragonBoss69xx("Adrien"),
                 new GoblinRoberto("Roberto")
             };
