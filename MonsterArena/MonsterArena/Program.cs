@@ -16,7 +16,7 @@ namespace MonsterArena
                 new GiantSlug("Babygirl"),
                 new HeroForFun("Saitama"),
                 new Leprauchaun("Echo"),
-                new Nana.Spirit("Brad"),
+                //new Nana.Lich("Brad"),
                 new Palico("Mittens"),
                 new PereFwetar("Samuel"),
                 new TheLegend27("Colin"),
