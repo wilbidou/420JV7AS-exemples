@@ -37,7 +37,7 @@ namespace MonsterArena
                 if (monsters[i].hp < GetDamage() || monsters[i].hp >= 0)
                 {
                     //logique d'attacker en premier
-                    _ennemyValue++;
+                    _ennemyValue += 2;
                 }
                 if (monsters[i].level > 1)
                 {
