@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -10,17 +10,17 @@ namespace MonsterArena
         {
             List<Monster> monsters = new List<Monster>()
             {
-                new SpanishInquisition("Nobody expects")
+                new SpanishInquisition("Nobody expects"),
                 new AtlasWorldLifter("Victor"),
                 new Daniel("David"),
-                new Furry("Trap"),
                 new GiantSlug("Babygirl"),
                 new HeroForFun("Saitama"),
                 new Leprauchaun("Echo"),
-                new Nana.Spirit("Brad"),
+                //new Nana.Lich("Brad"),
                 new Palico("Mittens"),
                 new PereFwetar("Samuel"),
                 new TheLegend27("Colin"),
+                new InhumanRat("Theo"),
                 new XxdragonBoss69xx("Adrien"),
                 new GoblinRoberto("Roberto")
             };
@@ -40,10 +40,15 @@ namespace MonsterArena
 
                     var monsterData = CreateMonsterData(monsters);
                     int attackIndex = activeMonster.GetAttackIndex(monsterData);
-                    if (attackIndex < 0 || attackIndex >= monsters.Count)
-                        continue;
 
-                    activeMonster.Attack(monsters[attackIndex]);
+                    if (attackIndex < 0 || attackIndex >= monsters.Count)
+                    {
+                        activeMonster.Attack(activeMonster);
+                    }
+                    else
+                    {
+                        activeMonster.Attack(monsters[attackIndex]);
+                    }
                 }
             }
 
