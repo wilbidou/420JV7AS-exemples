@@ -14,7 +14,7 @@ namespace MonsterArena
                 new Orc("Bob"),
                 new Goblin("Charlie"),
                 new Orc("David"),
-                new GiantSlug("Babygirl")
+                new GiantSlug("Babygirl"),
                 new Furry("Trap")
             };
 
