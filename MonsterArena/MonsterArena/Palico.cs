@@ -61,14 +61,26 @@ namespace MonsterArena
             {
                 for (int i = 0; i < monsters.Count; i++)
                 {
-                    if (monsters[i].name != GetData().name && monsters[i].hp > 0 && monsters[i].hp/2 < GetDamage())
+                    if (monsters[i].name != GetData().name && monsters[i].hp > 0 && monsters[i].hp / 2 < GetDamage())
                     {
                         target = i;
                         break;
 
                     }
+                    else
+                    {
+                        for (int j = 0; j < monsters.Count; j++)
+                        {
+                            if (monsters[j].name != GetData().name && monsters[j].hp > 0)
+                            {
+                                target = j;
+                                break;
 
+                            }
 
+                        }
+
+                    }
                 }
 
             }
