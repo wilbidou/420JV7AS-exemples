@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InhumanRat.cs" />
+    <Compile Include="ArenaMaster.cs" />
     <Compile Include="SpanishInquisition.cs" />
     <Compile Include="AtlasWorldLifter.cs" />
     <Compile Include="Daniel.cs" />
