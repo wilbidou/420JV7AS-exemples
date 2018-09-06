@@ -37,6 +37,12 @@ namespace MonsterArena
             }
         }
 
+        protected int GetDamage()
+        {
+            return baseStrength + bonusStrength;
+        }
+
+
         public virtual int GetAttackIndex(List<MonsterData> monsters)
         {
             return random.Next(0, monsters.Count);
