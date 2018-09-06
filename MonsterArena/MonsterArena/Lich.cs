@@ -92,18 +92,18 @@ namespace Nana
             {
                 Console.WriteLine("");
                 Console.WriteLine(GetData().name + " has stopped the time!");
-                System.Threading.Thread.Sleep(1000);
+                //System.Threading.Thread.Sleep(1000);
                 Console.Write(GetData().name + ": ");
                 for (int i = 1; i < 70; i++)
                 {
                     Console.Write("Useless! ");
-                    System.Threading.Thread.Sleep(700 / i);
+                    //System.Threading.Thread.Sleep(700 / i);
                 }
                 Console.Write("It's useless!");
-                System.Threading.Thread.Sleep(1000);
+                //System.Threading.Thread.Sleep(1000);
                 Console.WriteLine("");
                 Console.WriteLine(GetData().name + ": Your Efforts is for naught!");
-                System.Threading.Thread.Sleep(1000);
+                //System.Threading.Thread.Sleep(1000);
             }
 
             turn++;
@@ -120,11 +120,11 @@ namespace Nana
                 else e = new Nana.Lich("[Accurency & Resillience]", 4);
 
                 Console.WriteLine(" ");
-                if (turn < 2) System.Threading.Thread.Sleep(300);
+                //if (turn < 2) System.Threading.Thread.Sleep(300);
                 Console.Write(GetData().name + ": Come forth,");
-                if (turn < 2) System.Threading.Thread.Sleep(300);
+                //if (turn < 2) System.Threading.Thread.Sleep(300);
                 Console.Write(e.GetData().name + "!");
-                if (turn < 2) System.Threading.Thread.Sleep(500);
+                //if (turn < 2) System.Threading.Thread.Sleep(500);
                 Console.WriteLine(" ");
                 for (int i = 0; i < 3; i++)
                 {
@@ -132,14 +132,14 @@ namespace Nana
                     while (e.GetData().hp > 0)
                     {
                         Attack(e);
-                        if (turn < 2) System.Threading.Thread.Sleep(200);
+                        //if (turn < 2) System.Threading.Thread.Sleep(200);
                     }
 
                 }
 
                 Console.WriteLine(GetData().name + " absorbed " + e.GetData().name + "!");
                 if (turn == 0) Console.WriteLine("Time Resumed!");
-                if (turn < 2) System.Threading.Thread.Sleep(300);
+                //if (turn < 2) System.Threading.Thread.Sleep(300);
 
             }
 
@@ -165,7 +165,7 @@ namespace Nana
                     Console.WriteLine(GetData().name + ": You were already dead.");
                 else if (turn == 5)
                     Console.WriteLine(GetData().name + ": Told you, you ought to surrender, mortal.");
-                System.Threading.Thread.Sleep(100);
+                //System.Threading.Thread.Sleep(100);
             }
             else if (GetData().hp < 40)
             {
@@ -174,9 +174,9 @@ namespace Nana
             if (GetDamage() > 500 && !flex)
             {
                 Console.WriteLine(GetData().name + ": It's Over.");
-                System.Threading.Thread.Sleep(1200);
+                //System.Threading.Thread.Sleep(1200);
                 Console.WriteLine(GetData().name + ": My power level is over 500. Stop struggling, there isn't anything you can do. I'll give you a painless death.");
-                System.Threading.Thread.Sleep(300);
+                //System.Threading.Thread.Sleep(300);
                 flex = true;
             }
 
